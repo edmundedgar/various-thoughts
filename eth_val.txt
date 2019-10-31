@@ -1,0 +1,35 @@
+Valuing ETH
+
+Ethereum is expected to be proof-of-stake. In a proof-of-stake system, you can ignore the amount of new money that you expect to be created in future when trying to work out the value of the token now. This is because unlike proof-of-work which prints money to pay for ongoing security, all issuance is given to existing holders of the token. This makes it less like a rights issue (which dilutes the holdings of existing holders to pay for operations or new investment) and more like a stock split (which increases the number of shares but splits the new shares among the existing holders, leaving the proportion of the total owned by each holder unchanged). Staking rewards *will* have the effect of moving money from people who don't stake to people who do, but since a current ETH can be either staked or unstaked and staked and unstaked ETH will be fungible, the balance between those groups shouldn't make a difference to its valuation now, before staking has started. So once proof-of-work is gone, we can forget about the block rewards.
+
+Revenue from the total ETH system comes in the form of fees. Fees are expected to be partly burned and partly given to stakers who produce blocks. But these both benefit different kinds of ETH holders, and since these different kinds of ETH are fungible, we don't have to care about the difference. So we can work out how much fee income there will be, and divide it by the number of stakers, and that's how much I can expect to gain from an investment in ETH.
+
+Fee revenue is a function of gas price x gas used. We can guess a gas price based on how much we think transactions should cost in a functioning system. Let's say a simple send should be $0.01 USD, and take about 20,000 gas. A current block should use about 10 million gas, ie about $5 per block. There are 4 blocks per minute, and about 500,000 minutes in a year, 
+so the network can raise $20 per minute, or $10,000,000 per year.
+$CURRENT_FEE_REVENUE = $10 million per year
+Increase this number if you think the fee we should be extracting should be higher, decrease it if you think it will be lower.
+
+However, in the future we're going to have flying cars, faster computers and over 1000 shards, so we have capacity for at many times the current usage. Let's say we grow 1000x.
+$FUTURE_MULTIPLIER = 1000
+Increase this number if you think we'll have more capacity and demand at the price you set for $CURRENT_FEE_REVENUE, decrease it if you think we'll have less.
+
+$FUTURE_FEE_REVENUE = $CURRENT_FEE_REVENUE * $FUTURE_MULTIPLIER = $10 billion per year
+
+This is distributed among any ETH holder who opts in, by staking. However, some of the ETH will be locked up in wallets or defi apps, and not available to staking. How much? Possibly most of it, but when we're making tools to reduce financial friction and increase efficiency, we probably shouldn't assume that we won't disrupt ourselves and make it unnecessary to hold ETH unstaked for long periods of time. Let's assume half the ETH is staked.
+$RENT_EXTRACTOR_PARTICIPATION = 0.5
+
+Finally, to get the amount of revenue per ETH, we need to divide by the number of ETH. This is about 100 million.
+$NUM_ETH = 100,000,000
+Increase this number if you think PoW will continue for a really, really long time. Decrease it if you think everybody is terrible at managing their keys.
+
+$REVENUE_PER_ETH = $FUTURE_FEE_REVENUE * (1/$RENT_EXTRACTOR_PARTICIPATION) / $NUM_ETH = $100
+
+Historically risky stocks tend to return about 10%. So to get the correct ETH price, multiply by 10.
+$EXPECTED_RETURN = 10%
+
+$ETH_PRICE = $REVENUE_PER_ETH * (100/$EXPECTED_RETURN) = $1000
+
+The above assumes ETH 2.0 actually works, and it doesn't get out-competed in the meantime. Discount it to the extent that you think this is not in factc a sure thing.
+$FAILURE_PROBABILITY = 50%
+
+$MORE_REALISTIC_ETH_PRICE = $ETH_PRICE * $FAILURE_PROBABILITY / 100 = $500

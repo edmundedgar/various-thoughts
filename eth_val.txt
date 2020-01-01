@@ -29,7 +29,7 @@ $EXPECTED_RETURN = 10%
 
 $ETH_PRICE = $REVENUE_PER_ETH * (100/$EXPECTED_RETURN) = $1000
 
-The above assumes ETH 2.0 actually works, and it doesn't get out-competed in the meantime. Discount it to the extent that you think this is not in factc a sure thing.
+The above assumes ETH 2.0 actually works, and it doesn't get out-competed in the meantime. Discount it to the extent that you think this is not in fact a sure thing.
 $FAILURE_PROBABILITY = 50%
 
 $MORE_REALISTIC_ETH_PRICE = $ETH_PRICE * $FAILURE_PROBABILITY / 100 = $500

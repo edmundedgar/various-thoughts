@@ -20,7 +20,7 @@ $RENT_EXTRACTOR_PARTICIPATION = 0.5
 
 Finally, to get the amount of revenue per ETH, we need to divide by the number of ETH. This is about 100 million.
 $NUM_ETH = 100,000,000
-Increase this number if you think PoW will continue for a really, really long time. Decrease it if you think everybody is terrible at managing their keys.
+Increase this number if you think PoW will continue for a really, really long time. Decrease it if you think everybody except you is terrible at managing their keys.
 
 $REVENUE_PER_ETH = $FUTURE_FEE_REVENUE * (1/$RENT_EXTRACTOR_PARTICIPATION) / $NUM_ETH = $100
 
